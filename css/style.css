@@ -1,0 +1,193 @@
+  /*--------------------------------------INITIALISATION------------------------------------------------*/ 
+
+  *{
+    font-family: 'Arial', sans-serif;
+  }
+    a{
+    text-decoration: none;
+    color: #000;
+  }
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .title{
+      margin-top: 1.5%;
+      margin-left: 2%;
+    }
+    .nav {
+      display: flex;
+      font-size: 1em;
+      margin-top: 1.5%;
+      padding-right: 5%;
+    }
+    .nav__list--item {
+      list-style: none; 
+      padding: 0; 
+      display: inline; 
+    }
+    .nav__list--item:not(:last-child):after {
+      content: "|"; 
+      margin: 0 8px; 
+      color: #000; 
+    }
+
+    /*-----------------------MAIN------------------------------------*/
+    main{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5%;
+      margin-left: 12.5%;
+      margin-bottom: 10%;
+      width: 75%;
+    }
+    .home{
+      display: flex;
+      justify-content: center;
+    }
+    .home__image{
+      height: 80%;
+      width: 80%;
+      border-radius: 50%;
+    }
+    .about{
+      display: block;
+      align-items: center;
+      width: 60%;
+      height: 80%;
+    }
+    .about__title{
+      font-size: 2.2rem;
+    }
+    .about__description{
+      line-height: 2rem;
+    }
+    .about__links{
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      height: 5rem;
+    }
+    .about__links--button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: auto;
+      border-radius: 20em; 
+    }
+    .about__links--orange{
+      background-color: rgb(234, 212, 13);
+    }
+    .about__links--red{
+      background-color: rgb(138, 3, 3);
+    }
+    .about__links--aqua{
+      background-color: rgb(5, 113, 175);
+    }
+/*----------------------FOOTER------------------------------*/
+
+footer{
+  width: 80%;
+  margin-left: 10%;
+}
+.Contact{
+  display: flex;
+  justify-content: space-between;
+}
+.Contact__rx--icon{
+  color: #000;
+  background-color: white;
+  margin: 5%;
+}
+
+
+  /*----------------RESPONSIVE-----------------*/
+  
+  /*---------------- MOBILE-----------------*/
+  
+  @media screen and (max-width: 428px) {
+  /* HEAD MOBILE */
+    header{
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .title, .nav, .nav__list, .nav__list--item {
+      margin: 0;
+      margin-top: 3%;
+      padding: 0;
+    }
+      /*INDEX*/
+    main {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0%;
+      margin-top: 15%;
+      width: 100%;
+    }
+    .about{
+      margin-top: 10%;
+      text-align: center;
+      width: 90%;
+    }
+    .about__list{
+      margin-top: 10%;
+      width: 100%;
+    }
+  
+    /*FOOTER*/
+    footer{
+      margin-top: 20%;
+    }
+    .Contact{
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .Contact__me{
+      width: 80%;
+      margin-top: 5%;
+      margin-left: 10%;
+    }
+  }
+  
+  /*----------------------------------TABLETTE -----------------------------------*/
+  
+  @media screen and (min-width: 429px) and (max-width: 1100px){
+  
+    /*HEADER*/
+      header{
+      justify-content: space-between;
+    }
+    .nav{
+      margin: 0%;
+    }
+  
+    /*INDEX*/
+    main {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0%;
+      margin-top: 10%;
+      width: 100%;
+      margin-bottom: 10%;
+    }
+    .about{
+      margin-top: 7%;
+      text-align: center;
+      width: 90%;
+    }
+    .about__links{
+      width: 50%;
+      margin-left: 25%;
+    }
+  
+  /*---------------------------------------DESKTOP-----------------------------------------------*/
+    @media screen and (min-width: 1441px) {
+      body{
+        width: 80%;
+        margin-left: 10%;
+      }
+  }
+}

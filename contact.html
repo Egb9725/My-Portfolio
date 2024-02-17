@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>CONTACT</title>
+</head>
+<body>
+    <header>
+        <h1 class="title"><a href="index.html">Dorcas Egbende</a></h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list--item"><a href="cv.html">CV</a></li>
+                <li class="nav__list--item"><a href="projets.html">Projets</a></li>
+                <li class="nav__list--item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h3 class="contact__title">Contact</h3>
+            <p class="contact__description">
+                <strong>Télephone</strong><br><a class="contact__links" href="#">+243810592913</a>
+            </p>
+            <p class="contact__description">
+                <strong>Email</strong><br><a class="contact__links" href="#">dorcasegbende@gmail.com</a>
+            </p>
+        </section>
+        <section class="entry">
+            <form action="post" method="get">
+                <div class="entry__content">
+                    <div class="first__last">
+                        <label for="firstname" class="first__last--firstname">First Name</label><br>
+                        <input type="text" name="firstname" id="firstname" class="first__last--style first__last--firstname">
+                    </div>
+                    <div class="first__last">
+                        <label for="lastname" class="first__last--lastname">Last Name</label><br>
+                        <input type="text" name="lastname" id="lastname" class="first__last--style first__last--lastname">
+                    </div>
+                </div>
+                <div class="entry__content">
+                    <div class="mail__subject">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="Email" id="email" class="mail__subject--style mail__subject--email">
+                    </div>
+                    <div class="mail__subject">
+                        <label for="subject" class="mail__subject--subject">Subject</label><br>
+                        <input type="text" name="subject" id="subject" class="mail__subject--style mail__subject--subject">
+                    </div>
+                </div>
+                <div class="entry__content">
+                    <div class="submit__message">
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="message" class="submit__message--message submit__message--style" rows="8"></textarea>
+                    </div>
+                    <input type="submit" class="button__submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <hr>
+        <div class="Contact">
+            <div class="Contact__me">
+                <div><strong>Télephone</strong></div>
+                <p><a href="#">+243810592913</a></p>
+            </div>
+            <div class="Contact__me">
+                <div><strong>Email</strong></div>
+                <p><a href="#">dorcasegbende@gmail.com</a></p>
+            </div>
+            <div class="Contact__me">
+                <div class="Contact__rx"><strong>Suivez-moi</strong><br>
+                    <p>
+                        <a class="Contact__rx--icon" href="#"><span class="fab fa-instagram"></span></a>
+                        <a class="Contact__rx--icon" href="#"><span class="fab fa-linkedin"></span></a>
+                        <a class="Contact__rx--icon" href="#" ><span class="fab fa-twitter"></span></a>
+                    </p>
+                </div>
+            </div>
+            <div class="Contact__me">&copy; 2024 By Dorcas Egbende</div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+ /*--------------------------------------INITIALISATION------------------------------------------------*/ 
+
+ *{
+  font-family: 'Arial', sans-serif;
+}
+  a{
+  text-decoration: none;
+  color: #000;
+}
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .title{
+    margin-top: 1.5%;
+    margin-left: 2%;
+  }
+  .nav {
+    display: flex;
+    font-size: 1em;
+    margin-top: 1.5%;
+    padding-right: 5%;
+  }
+  .nav__list--item {
+    list-style: none; 
+    padding: 0; 
+    display: inline; 
+  }
+  .nav__list--item:not(:last-child):after {
+    content: "|"; 
+    margin: 0 8px; 
+    color: #000; 
+  }
+
+/* ---------------------MAIN---------------------------------- */
+ main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8%;
+  margin-left: 10%;
+  margin-bottom: 13%;
+  width: 80%;
+  height: 100%;
+}
+.contact{
+  width: 30%;
+}
+.contact__title{
+  margin-left: 4%;
+  font-size: 1.5rem;
+}
+.contact__description{
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.contact__links{
+  margin: 0%;
+}
+.entry{
+  width: 50%;
+}
+.entry__content{
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+.first__last, .mail__subject{
+  width: 50%;
+}
+.first__last--lastname, .mail__subject--subject {
+  margin-left: 5%;
+}
+.first__last--style{
+  height: 2.5rem;
+  width: 90%;
+}
+.mail__subject--style{
+  height: 2.5rem;
+  width: 90%;
+}
+
+.submit__message{
+  width: 48%;
+}
+.submit__message--style{
+  width: 95%;
+  resize: none;
+}
+.button__submit{
+  background-color: rgb(251, 255, 0);
+  height: 9rem;
+  width: 9rem;
+  margin-left: 12%;
+  border-radius: 50%; 
+}
+ 
+
+/*----------------------FOOTER------------------------------*/
+
+footer{
+  width: 80%;
+  margin-left: 10%;
+}
+.contact{
+  display: flex;
+  justify-content: space-between;
+}
+.Contact__rx--icon{
+  color: #000;
+  background-color: white;
+  margin: 5%;
+}
+  
+  
+/*----------------RESPONSIVE-----------------*/
+  
+/*---------------- MOBILE-----------------*/ 
+@media screen and (max-width: 428px) {
+  /*HEAD MOBILE*/
+      header{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      .title, .nav, .nav__list, .nav__list--item {
+        margin: 0;
+        margin-top: 3%;
+        padding: 0;
+      }
+/*CONTACT*/
+    main {
+      margin-top: 15%;
+      margin-left: 5%;
+      width: 90%;
+      display: block;
+    }
+    .contact{
+      text-align: center;
+      width: 100%;
+    }
+    .entry{
+      width: 100%;
+    }
+    .entry__content{
+      display: block;
+      align-items: center;
+      margin-top: 10%;
+    }
+    .first__last--style{
+      width: 95%;
+    }
+    .mail__subject--style{
+      width: 95%;
+    }
+
+    .mail__subject--style,.first__last--style, .submit__message--message{
+      margin-bottom: 5%;
+    }
+    .first__last--lastname, .mail__subject--subject {
+      margin-left: 0%;
+    }
+    .first__last, .mail__subject {
+      width: 100%;
+    }
+    .submit__message{
+      width: 100%;
+    }
+    .button__submit{
+      margin-left: 35%;
+      height: 7rem;
+      width: 7rem;
+    }
+  
+    
+   /*FOOTER*/
+  footer{
+    margin-top: 20%;
+  }
+  .Contact{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .Contact__me{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+  
+  
+  }
+  
+  /*---------------------------------- TABLETTE-----------------------------------*/
+  
+  @media screen and (min-width: 429px) and (max-width: 1100px){
+  
+    /*--- HEADER ---*/
+    header{
+      justify-content: space-between;
+    }
+    .nav{
+      margin: 0%;
+    }
+  
+    /*CONTACT*/
+    main{
+      display: block;
+      margin-top: 10%;
+      margin-left: 5%;
+      width: 90%;
+    }
+    .contact{
+      text-align: center;
+      width: 100%;
+    }
+    .contact__title, .contact__description, .contact__links{
+      margin: 0%;
+      margin-top: 7%;
+    }
+    .entry{
+      width: 100%;
+    }
+    .submit__message {
+      width: 48%;
+    }
+    .button__submit {
+      margin-left: 8%;
+    }
+  }
+  
+  /*--------------------------DESKTOP---------------------------*/
+  
+  @media screen and (min-width: 1441px) {
+    body{
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+  
